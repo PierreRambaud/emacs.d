@@ -6,11 +6,11 @@ This repository contains my emacs configuration largely inspired (and some parts
 ## Motivation
 
 After using [Sliim](https://github.com/Sliim/emacs.d) configuration since many months, I needed to setup in my way and remove all modules that are useless for my usage.
-Its configuration is a very good base for learning lisp language and always having emacs working :)
+Its configuration is a very good base for learning lisp language :)
 
 ## Installation
 
-Clone this repository in your homme directory
+Clone this repository in your home directory
 
 `git clone --recursive https://github.com/PierreRambaud/emacs.d ~/.emacs.d`
 
