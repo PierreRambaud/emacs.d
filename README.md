@@ -20,6 +20,6 @@ Install Cask by following theses [instructions](http://cask.readthedocs.org/en/l
 
 `cd ~/.emacs.d && cask install`
 
+## Screenshot
 
-
-
+![](https://raw.github.com/PierreRambaud/emacs.d/master/preview.png)
