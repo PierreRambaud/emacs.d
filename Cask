@@ -68,4 +68,5 @@
 (depends-on "rainbow-delimiters")
 (depends-on "smartparens")
 (depends-on "smex")
+(depends-on "undo-tree")
 (depends-on "volatile-highlights")

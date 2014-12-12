@@ -196,6 +196,11 @@ The body of the advice is in BODY."
 (setq whitespace-line-column 80) ;; limit line length
 (setq whitespace-style '(face tabs empty trailing lines-tail))
 
+;; Undo tree mode
+(require 'undo-tree)
+(global-undo-tree-mode)
+(diminish 'undo-tree-mode)
+
 ;; Remove trailing whitespaces
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
