@@ -6,3 +6,5 @@ themes/*
 !themes/.gitkeep
 auto-save-list
 .project
+%backup%~
+tramp
