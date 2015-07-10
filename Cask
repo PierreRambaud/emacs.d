@@ -40,7 +40,6 @@
 (depends-on "gotham-theme")
 
 ;; Emacs specific
-(depends-on "ack-and-a-half")
 (depends-on "anzu")
 (depends-on "direx")
 (depends-on "flx-ido")
