@@ -31,7 +31,6 @@
 (depends-on "yaml-mode")
 
 ;; Git
-(depends-on "git-commit-mode")
 (depends-on "gitignore-mode")
 (depends-on "gitconfig-mode")
 (depends-on "magit")
@@ -54,7 +53,6 @@
 (depends-on "helm-git-grep")
 (depends-on "helm-c-yasnippet")
 (depends-on "iedit")
-(depends-on "ielm")
 (depends-on "ido-ubiquitous")
 (depends-on "multiple-cursors")
 (depends-on "ov")
