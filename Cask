@@ -45,6 +45,7 @@
 (depends-on "flycheck")
 (depends-on "flymake-cursor")
 (depends-on "guru-mode")
+(depends-on "tramp")
 (depends-on "helm")
 (depends-on "helm-projectile")
 (depends-on "helm-project-persist")
