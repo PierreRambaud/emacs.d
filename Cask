@@ -37,6 +37,7 @@
 
 ;; Theme
 (depends-on "gotham-theme")
+(depends-on "distinguished-theme")
 
 ;; Emacs specific
 (depends-on "anzu")

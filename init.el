@@ -39,5 +39,5 @@
 (load (expand-file-name "modules.el" dir))
 
 ;; Load theme
-(require 'gotham-theme)
-(load-theme 'gotham t)
+(require 'distinguished-theme)
+(load-theme 'distinguished t)
