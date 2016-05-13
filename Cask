@@ -22,6 +22,11 @@
 (depends-on "flymake-php")
 (depends-on "php-mode")
 
+;; Go
+(depends-on "flymake-go")
+(depends-on "golint")
+(depends-on "go-mode")
+
 ;; Others languages
 (depends-on "feature-mode")
 (depends-on "go-mode")

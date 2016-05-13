@@ -1,4 +1,4 @@
-(require 'skbd-module)
+(require 'kbd-module)
 
 (defvar prelude-dir (expand-file-name "prelude" dir)
   "Prelude root directory.")
@@ -30,7 +30,7 @@
     (load-prelude)
   (message "Couldn't find prelude directory"))
 
-(define-key skbd-mode-map (kbd "C-c d") 'prelude-duplicate-current-line-or-region)
-(define-key skbd-mode-map (kbd "C-c b") 'prelude-switch-to-previous-buffer)
+(define-key kbd-mode-map (kbd "C-c d") 'prelude-duplicate-current-line-or-region)
+(define-key kbd-mode-map (kbd "C-c b") 'prelude-switch-to-previous-buffer)
 
 (provide 'prelude-module)

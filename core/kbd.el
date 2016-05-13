@@ -1,23 +1,13 @@
-;;; skbd.el --- This is a minor mode to manage my personal kbd map
-;;
-;; Author: Sliim <sliim@mailoo.org>
-;; Version: 1.0.0
-;; Keywords: keybindings
+;;; kbd.el --- This is a minor mode to manage Key Binding
 
-;; This file is not part of GNU Emacs.
-
-;;; Commentary:
-
-;; Sliim personal keybindings
-
-(defgroup skbd nil
+(defgroup kbd nil
   "GoT personal keybindings"
   :group 'projext)
 
-(defvar skbd-keymap-prefix (kbd "C-o")
-  "Skbd keymap prefix.")
+(defvar kbd-keymap-prefix (kbd "C-o")
+  "kbd keymap prefix.")
 
-(defvar skbd-mode-map
+(defvar kbd-mode-map
   (let ((map (make-sparse-keymap)))
     (let ((prefix-map (make-sparse-keymap)))
       (define-key prefix-map (kbd "h c") 'helm-stumpwm-commands)
@@ -66,18 +56,18 @@
       (define-key prefix-map (kbd "P") 'proced)
       (define-key prefix-map (kbd "s") 'eshell)
 
-      (define-key map skbd-keymap-prefix prefix-map))
+      (define-key map kbd-keymap-prefix prefix-map))
     map)
-  "Keymap for Skbd mode.")
+  "Keymap for kbd mode.")
 
-(define-globalized-minor-mode skbd-global-mode
-  skbd-mode
-  skbd-mode 1)
+(define-globalized-minor-mode kbd-global-mode
+  kbd-mode
+  kbd-mode 1)
 
-(define-minor-mode skbd-mode
+(define-minor-mode kbd-mode
   "Keybindings map."
-  :lighter " Skbd"
-  :keymap skbd-mode-map
-  :group 'skbd)
+  :lighter " kbd"
+  :keymap kbd-mode-map
+  :group 'kbd)
 
-(provide 'skbd)
+(provide 'kbd)

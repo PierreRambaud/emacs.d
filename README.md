@@ -1,12 +1,7 @@
 # Emacs.d
 
-This repository contains my emacs configuration largely inspired (and some parts copied) from [Sliim](https://github.com/Sliim/emacs.d) and [Prelude](https://githu.com/bbatsov/prelude) repositories.
+This repository contains my emacs configuration largely inspired from [Prelude](https://githu.com/bbatsov/prelude) repositories.
 
-
-## Motivation
-
-After using [Sliim](https://github.com/Sliim/emacs.d) configuration since many months, I needed to setup in my way and remove all modules that are useless for my usage.
-Its configuration is a very good base for learning lisp language :)
 
 ## Installation
 
