@@ -20,6 +20,7 @@
 
 ;; Php
 (depends-on "flymake-php")
+(depends-on "flymake-phpcs")
 (depends-on "php-mode")
 
 ;; Go
