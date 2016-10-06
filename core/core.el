@@ -11,9 +11,9 @@
 (add-hook 'prog-mode-hook 'guru-mode)
 
 ;;Global configuration
-(tool-bar-mode -1)
-(menu-bar-mode -1)
-(scroll-bar-mode -1)
+(if (functionp 'tool-bar-mode) (tool-bar-mode -1))
+(if (functionp 'menu-bar-mode) (menu-bar-mode -1))
+(if (functionp 'scroll-bar-mode) (scroll-bar-mode -1))
 
 ;; (blink-cursor-mode -1)
 (delete-selection-mode t)

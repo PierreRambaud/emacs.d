@@ -1,6 +1,9 @@
 .cask
 custom.el
 var/*
+!var/project-persist
+var/project-persist/*
+!var/project-persist/.gitkeep
 !var/.gitkeep
 themes/*
 !themes/.gitkeep
