@@ -22,6 +22,7 @@
 (depends-on "flymake-php")
 (depends-on "flymake-phpcs")
 (depends-on "php-mode")
+(depends-on "twig-mode")
 
 ;; Go
 (depends-on "flymake-go")
