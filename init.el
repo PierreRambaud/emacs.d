@@ -13,6 +13,10 @@
   "Var/ root directory.")
 (defvar cask-dir (expand-file-name ".cask" dir)
   "Cask root directory.")
+(defvar emacsd-elpa-dir (expand-file-name
+                         (concat (number-to-string emacs-major-version) "."
+                                 (number-to-string emacs-minor-version) "/elpa")
+                         cask-dir))
 (defvar elpa-dir (expand-file-name (concat emacs-version "/elpa") cask-dir)
   "Elpa packages root directory.")
 (defvar backup-dir (expand-file-name "backup" var-dir)
@@ -37,6 +41,11 @@
 
 ;; Load modules
 (load (expand-file-name "modules.el" dir))
+
+;; Load private config if exists
+(let ((user-config-file "~/.emacsrc"))
+  (when (file-exists-p user-config-file)
+    (load-file user-config-file)))
 
 ;; Load theme
 (require 'distinguished-theme)
