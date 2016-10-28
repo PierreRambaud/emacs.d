@@ -8,7 +8,7 @@
 (require 'helm-git-grep)
 (require 'helm-c-yasnippet)
 
-(setq helm-buffers-favorite-modes (quote (emacs-lisp-mode org-mode php-mode ruby-mode python-mode shell-script-mode))
+(setq helm-buffers-favorite-modes (quote (emacs-lisp-mode php-mode ruby-mode python-mode shell-script-mode twig-mode org-mode))
       helm-follow-mode-persistent t)
 (defun helm-buffers-right-side ()
   "Special helm settings to list buffers in right side."

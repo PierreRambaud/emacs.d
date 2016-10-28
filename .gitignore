@@ -1,4 +1,5 @@
 .cask
+games
 custom.el
 var/*
 !var/project-persist
