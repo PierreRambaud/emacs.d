@@ -1,6 +1,8 @@
 (source gnu)
 (source melpa)
 
+(depends-on "package-safe-delete")
+(depends-on "crux")
 (depends-on "dash")
 (depends-on "diminish")
 (depends-on "s")

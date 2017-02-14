@@ -1,4 +1,5 @@
 (require 'package)
+(require 'crux)
 
 (defun init-packages()
   "Initialize packages directory."

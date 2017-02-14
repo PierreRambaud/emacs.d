@@ -31,6 +31,6 @@
   (message "Couldn't find prelude directory"))
 
 (define-key kbd-mode-map (kbd "C-c d") 'prelude-duplicate-current-line-or-region)
-(define-key kbd-mode-map (kbd "C-c b") 'prelude-switch-to-previous-buffer)
+(define-key kbd-mode-map (kbd "C-c b") 'crux-switch-to-previous-buffer)
 
 (provide 'prelude-module)
