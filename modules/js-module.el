@@ -1,6 +1,7 @@
 (require 'js-comint)
 
 (add-hook 'js-mode-hook 'flymake-jslint-load)
+(setq js-indent-level 2)
 (setq inferior-js-program-command "node")
 (setq inferior-js-mode-hook
       (lambda ()
