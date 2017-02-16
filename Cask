@@ -19,6 +19,7 @@
 (depends-on "flymake-jslint")
 (depends-on "js-comint")
 (depends-on "js2-mode")
+(depends-on "vue-mode")
 
 ;; Php
 (depends-on "flymake-php")
