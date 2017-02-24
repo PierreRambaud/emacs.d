@@ -16,7 +16,6 @@
 (depends-on "flymake-ruby")
 
 ;; Javascript
-(depends-on "flymake-jslint")
 (depends-on "js-comint")
 (depends-on "js2-mode")
 (depends-on "vue-mode")
@@ -39,6 +38,8 @@
 (depends-on "markdown-mode")
 (depends-on "puppet-mode")
 (depends-on "yaml-mode")
+(depends-on "flymake-less")
+(depends-on "flymake-sass")
 
 ;; Git
 (depends-on "gitignore-mode")
