@@ -1,4 +1,5 @@
 ;; Custom modules
+(require 'magit-module)
 (require 'prelude-module)
 (require 'direx-module)
 (require 'eshell-module)
