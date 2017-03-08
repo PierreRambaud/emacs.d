@@ -5,6 +5,7 @@
 (require 'eshell-module)
 (require 'helm-module)
 (require 'js-module)
+(require 'web-module)
 (require 'md-module)
 (require 'notify-module)
 (require 'php-module)
