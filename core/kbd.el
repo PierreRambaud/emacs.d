@@ -55,7 +55,8 @@
       (define-key prefix-map (kbd "d") 'direx:jump-to-directory-other-window)
       (define-key prefix-map (kbd "P") 'proced)
       (define-key prefix-map (kbd "s") 'eshell)
-
+      (define-key prefix-map (kbd "a d") 'ansible::decrypt-buffer)
+      (define-key prefix-map (kbd "a e") 'ansible::encrypt-buffer)
       (define-key map kbd-keymap-prefix prefix-map))
     map)
   "Keymap for kbd mode.")
