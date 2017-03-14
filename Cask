@@ -11,6 +11,7 @@
 (depends-on "elpy")
 (depends-on "flymake-python-pyflakes")
 (depends-on "nose")
+(depends-on "ansible")
 
 ;; Ruby
 (depends-on "flymake-ruby")
@@ -18,7 +19,7 @@
 ;; Javascript
 (depends-on "js-comint")
 (depends-on "js2-mode")
-(depends-on "vue-mode")
+(depends-on "web-mode")
 
 ;; Php
 (depends-on "flymake-php")
