@@ -5,7 +5,7 @@
   "Initialize packages directory."
   (add-to-list 'package-archives
                '("melpa" . "http://melpa.milkbox.net/packages/") t)
-  (setq package-user-dir elpa-dir)
+  (setq package-user-dir emacsd-elpa-dir)
   (package-initialize))
 
 (require 'guru-mode)

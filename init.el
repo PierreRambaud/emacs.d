@@ -17,8 +17,6 @@
                          (concat (number-to-string emacs-major-version) "."
                                  (number-to-string emacs-minor-version) "/elpa")
                          cask-dir))
-(defvar elpa-dir (expand-file-name (concat emacs-version "/elpa") cask-dir)
-  "Elpa packages root directory.")
 (defvar backup-dir (expand-file-name "backup" var-dir)
   "This folder stores all the backup files.")
 (unless (file-exists-p backup-dir)
@@ -32,7 +30,7 @@
 (add-to-list 'load-path core-dir)
 (add-to-list 'load-path modules-dir)
 (add-to-list 'load-path vendor-dir)
-(let ((default-directory elpa-dir))
+(let ((default-directory emacsd-elpa-dir))
   (normal-top-level-add-subdirs-to-load-path))
 
 ;; Use core libraries
