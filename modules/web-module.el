@@ -34,6 +34,11 @@
               (append flycheck-disabled-checkers
                       '(json-jsonlist)))
 
+;; configure style, script and block padding
+(setq web-mode-style-padding 0)
+(setq web-mode-script-padding 0)
+(setq web-mode-block-padding 0)
+
 ;; https://github.com/purcell/exec-path-from-shell
 ;; only need exec-path-from-shell on OSX
 ;; this hopefully sets up path and other vars better
