@@ -35,9 +35,10 @@
                       '(json-jsonlist)))
 
 ;; configure style, script and block padding
-(setq web-mode-style-padding 0)
-(setq web-mode-script-padding 0)
-(setq web-mode-block-padding 0)
+(setq web-mode-style-padding 4)
+(setq web-mode-script-padding 4)
+(setq web-mode-block-padding 4)
+(setq web-mode-css-indent-offset 2)
 
 ;; https://github.com/purcell/exec-path-from-shell
 ;; only need exec-path-from-shell on OSX

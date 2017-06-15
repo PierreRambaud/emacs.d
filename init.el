@@ -1,5 +1,5 @@
-(when (version< emacs-version "24.1")
-  (error "Configuration requires at least GNU Emacs 24.1, but you're running %s" emacs-version))
+(when (version< emacs-version "24.4")
+  (error "Configuration requires at least GNU Emacs 24.4, but you're running %s" emacs-version))
 
 (defvar dir (file-name-directory load-file-name)
   "The root dir of Emacs.")
