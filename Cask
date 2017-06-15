@@ -12,6 +12,7 @@
 (depends-on "flymake-python-pyflakes")
 (depends-on "nose")
 (depends-on "ansible")
+(depends-on "editorconfig")
 
 ;; Ruby
 (depends-on "flymake-ruby")

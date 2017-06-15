@@ -7,4 +7,7 @@
 (require 'flymake-python-pyflakes)
 (add-hook 'python-mode-hook 'flymake-python-pyflakes-load)
 
+(require 'editorconfig)
+(editorconfig-mode 1)
+
 (provide 'python-module)
