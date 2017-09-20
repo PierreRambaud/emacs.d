@@ -10,6 +10,7 @@
 (add-hook 'flycheck-mode-hook #'my/use-eslint-from-node-modules)
 
 (add-to-list 'auto-mode-alist '("\\.jsx$" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.js$" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.vue$" . web-mode))
 
 ;; http://www.flycheck.org/manual/latest/index.html
@@ -45,5 +46,10 @@
 ;; this hopefully sets up path and other vars better
 (when (memq window-system '(mac ns))
   (exec-path-from-shell-initialize))
+
+(add-hook 'json-mode-hook
+          (lambda ()
+            (make-local-variable 'js-indent-level)
+            (setq js-indent-level 2)))
 
 (provide 'web-module)

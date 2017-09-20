@@ -19,7 +19,6 @@
 
 ;; Javascript
 (depends-on "js-comint")
-(depends-on "js2-mode")
 (depends-on "web-mode")
 
 ;; Php
