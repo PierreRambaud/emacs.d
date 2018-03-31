@@ -22,6 +22,8 @@
 (depends-on "web-mode")
 
 ;; Php
+(depends-on "ac-php")
+(depends-on "company-php")
 (depends-on "flymake-php")
 (depends-on "flymake-phpcs")
 (depends-on "php-mode")
