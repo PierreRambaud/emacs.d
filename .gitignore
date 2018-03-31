@@ -12,3 +12,4 @@ auto-save-list
 .project
 %backup%~
 tramp
+ac-comphist.dat
