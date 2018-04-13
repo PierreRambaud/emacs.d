@@ -12,5 +12,8 @@
                            (c-set-offset 'case-label '+)
                            (define-key php-mode-map (kbd "RET") 'newline-and-indent)))
 (setq flycheck-phpcs-standard "PSR2")
+(setq phpunit-stop-on-failure t)
+(setq phpunit-colorize "auto")
+(setq phpunit-program "./bin/phpunit")
 
 (provide 'php-module)
