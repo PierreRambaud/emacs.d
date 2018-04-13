@@ -29,6 +29,7 @@
 (depends-on "php-mode")
 (depends-on "twig-mode")
 (depends-on "phpunit")
+(depends-on "geben")
 
 ;; Go
 (depends-on "flymake-go")
