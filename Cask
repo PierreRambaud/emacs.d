@@ -71,7 +71,7 @@
 (depends-on "helm-git-grep")
 (depends-on "helm-c-yasnippet")
 (depends-on "iedit")
-(depends-on "ido-ubiquitous")
+(depends-on "ido-completing-read+")
 (depends-on "multiple-cursors")
 (depends-on "ov")
 (depends-on "popwin")
