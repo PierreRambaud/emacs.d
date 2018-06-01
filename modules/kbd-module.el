@@ -17,7 +17,7 @@
 (define-key kbd-mode-map (kbd "C-x C-b") 'ibuffer)
 (define-key kbd-mode-map (kbd "C-+") 'text-scale-increase)
 (define-key kbd-mode-map (kbd "C--") 'text-scale-decrease)
-(define-key kbd-mode-map (kbd "C-x g") 'magit-status)
-(define-key kbd-mode-map (kbd "C-c h") 'helm-custom)
+(define-key kbd-mode-map (kbd "C-M f") 'forward-list)
+(define-key kbd-mode-map (kbd "C-M b") 'backward-list)
 
 (provide 'kbd-module)
