@@ -20,6 +20,7 @@
       (define-key prefix-map (kbd "f p") 'flymake-goto-prev-error)
       (define-key prefix-map (kbd "g l") 'magit-log)
       (define-key prefix-map (kbd "g s") 'magit-status)
+      (define-key prefix-map (kbd "g t") 'ac-php-find-symbol-at-point)
       (define-key prefix-map (kbd "h f") 'helm-find-files)
       (define-key prefix-map (kbd "h g") 'helm-ls-git-ls)
       (define-key prefix-map (kbd "h q") 'helm-quickrun)
