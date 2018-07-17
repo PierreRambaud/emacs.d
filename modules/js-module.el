@@ -1,3 +1,11 @@
+;;; js-module.el --- Js module
+
+;;; Commentary:
+
+;; Js module
+
+;;; Code:
+
 (require 'js-comint)
 
 (setq js-indent-level 4)
@@ -11,3 +19,5 @@
            (replace-regexp-in-string "\033\\[[0-9]+[JGK]" "" output)))))
 
 (provide 'js-module)
+
+;;; js-module.el ends here

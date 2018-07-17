@@ -1,3 +1,11 @@
+;;; ruby-module.el --- Ruby module
+
+;;; Commentary:
+
+;; Ruby module
+
+;;; Code:
+
 (add-to-list 'auto-mode-alist '("\\.rake\\'" . ruby-mode))
 (add-to-list 'auto-mode-alist '("Rakefile\\'" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.gemspec\\'" . ruby-mode))
@@ -28,3 +36,5 @@
 (add-hook 'ruby-mode-hook 'flymake-ruby-load)
 
 (provide 'ruby-module)
+
+;;; ruby-module.el ends here

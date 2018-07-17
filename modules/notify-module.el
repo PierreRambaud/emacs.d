@@ -1,3 +1,11 @@
+;;; notify-module.el --- Notify module
+
+;;; Commentary:
+
+;; Notify module
+
+;;; Code:
+
 (require 'notifications)
 
 (defvar notify-icon-theme-path (expand-file-name ".icons/ACYL_Icon_Theme_0.9.4/" (getenv "HOME"))
@@ -11,3 +19,5 @@
       notifications-on-close-object t)
 
 (provide 'notify-module)
+
+;;; notify-module.el ends here

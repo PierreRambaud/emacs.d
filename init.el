@@ -3,6 +3,12 @@
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
 ;; You may delete these explanatory comments.
+
+;;; Commentary:
+
+;; Projext provide an extension for projectile and project-persist utilities
+
+;;; Code:
 (package-initialize)
 
 (when (version< emacs-version "24.4")

@@ -1,3 +1,11 @@
+;;; php-module.el --- Php module
+
+;;; Commentary:
+
+;; Php module
+
+;;; Code:
+
 (require 'cl)
 (require 'php-mode)
 
@@ -17,3 +25,5 @@
 (setq phpunit-program "./bin/phpunit")
 
 (provide 'php-module)
+
+;;; php-module.el ends here

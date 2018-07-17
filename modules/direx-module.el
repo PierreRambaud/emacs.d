@@ -1,3 +1,11 @@
+;;; direx-module.el --- Direx module
+
+;;; Commentary:
+
+;; Direx module
+
+;;; Code:
+
 (require 'popwin)
 (require 'direx)
 (require 'direx-project)
@@ -8,3 +16,5 @@
 (push '(direx:direx-mode :position left :width 45 :dedicated t) popwin:special-display-config)
 
 (provide 'direx-module)
+
+;;; direx-module.el ends here

@@ -1,3 +1,11 @@
+;;; web-module.el --- Web module
+
+;;; Commentary:
+
+;; Web module
+
+;;; Code:
+
 (defun my/use-eslint-from-node-modules ()
   (let* ((root (locate-dominating-file
                 (or (buffer-file-name) default-directory)
@@ -53,3 +61,5 @@
             (setq js-indent-level 2)))
 
 (provide 'web-module)
+
+;;; web-module.el ends here

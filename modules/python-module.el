@@ -1,3 +1,11 @@
+;;; python-module.el --- python module
+
+;;; Commentary:
+
+;; Python module
+
+;;; Code:
+
 (require 'elpy)
 
 (elpy-enable)
@@ -11,3 +19,5 @@
 (editorconfig-mode 1)
 
 (provide 'python-module)
+
+;;; python-module.el ends here

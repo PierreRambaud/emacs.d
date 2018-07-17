@@ -1,3 +1,10 @@
+;;; core.el --- Core engine
+
+;;; Commentary:
+
+;; Initiliaze everything
+
+;;; Code:
 (require 'package)
 (require 'crux)
 
@@ -24,7 +31,6 @@
               tab-width 4)
 (setq confirm-kill-emacs 'yes-or-no-p
       require-final-newline t
-      c-basic-offset 4
       scroll-conservatively 10000
       scroll-step 1
       delete-trailing-lines t
@@ -39,12 +45,15 @@
 (require 'diminish)
 (setq projectile-cache-file (expand-file-name "projectile.cache" var-dir))
 (setq projectile-known-projects-file (expand-file-name "projectile-bookmarks.eld" var-dir))
-(projectile-global-mode t)
+(projectile-mode t)
 (diminish 'projectile-mode "Prjl")
 (add-to-list 'projectile-globally-ignored-directories ".project")
 (setq projectile-globally-ignored-files '())
+
 (require 'projext)
 (projext-init)
+
+;;; core.el ends here
 
 ;; Mouse settings (disabling mouse-wheel and mouse keys)
 (setq make-pointer-invisible t

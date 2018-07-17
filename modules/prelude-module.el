@@ -1,3 +1,11 @@
+;;; prelude-module.el --- Prelude module
+
+;;; Commentary:
+
+;; Prelude module
+
+;;; Code:
+
 (require 'kbd-module)
 
 (defvar prelude-dir (expand-file-name "prelude" dir)
@@ -34,3 +42,5 @@
 (define-key kbd-mode-map (kbd "C-c b") 'crux-switch-to-previous-buffer)
 
 (provide 'prelude-module)
+
+;;; prelude-module.el ends here

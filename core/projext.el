@@ -8,6 +8,7 @@
 
 ;; Projext provide an extension for projectile and project-persist utilities
 
+;;; Code:
 (require 'project-persist)
 (require 'projectile)
 
@@ -236,3 +237,5 @@
   (setq projectile-tags-command (concat p-base-command " %s")))
 
 (provide 'projext)
+
+;;; projext.el ends here

@@ -1,4 +1,11 @@
-;; Custom modules
+;;; modules.el --- List of available modules
+
+;;; Commentary:
+
+;; Load all custom modules
+
+;;; Code:
+
 (require 'magit-module)
 (require 'prelude-module)
 (require 'direx-module)
@@ -15,3 +22,5 @@
 (require 'python-module)
 (require 'ruby-module)
 (require 'kbd-module)
+
+;;; modules.el ends here

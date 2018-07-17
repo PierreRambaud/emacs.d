@@ -1,3 +1,11 @@
+;;; helm-module.el --- Helm module
+
+;;; Commentary:
+
+;; Helm module
+
+;;; Code:
+
 (require 'helm)
 (require 'helm-misc)
 (require 'helm-files)
@@ -29,3 +37,5 @@
                        "*helm custom*")))
 
 (provide 'helm-module)
+
+;;; helm-module.el ends here

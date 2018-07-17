@@ -1,7 +1,15 @@
+;;; editor.el --- Editor configuration
+
+;;; Commentary:
+
+;; Configure the editorx
+
+;;; Code:
+
 (setq backup-directory-alist
       `((".*" . ,backup-dir)))
 (setq auto-save-file-name-transforms
-      `((".*" ,savefile-dir t)))
+      `((".*" , savefile-dir t)))
 
 (require 'smartparens-config)
 (setq sp-base-key-bindings 'paredit)
@@ -203,3 +211,5 @@ The body of the advice is in BODY."
 (winner-mode +1)
 
 (provide 'editor)
+
+;;; editor.el ends here

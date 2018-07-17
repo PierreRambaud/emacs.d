@@ -1,3 +1,11 @@
+;;; eshell-module.el --- Eshell module
+
+;;; Commentary:
+
+;; Eshell module
+
+;;; Code:
+
 (defun eshell/clear ()
   "Clear eshell buffer."
   (interactive)
@@ -41,6 +49,7 @@
 
 (if (boundp 'eshell-save-history-on-exit)
     (setq eshell-save-history-on-exit t))
+
 (setq eshell-highlight-prompt nil)
 (setq eshell-history-size 512)
 (setq eshell-directory-name (concat (getenv "HOME") "/.eshell"))
@@ -57,3 +66,5 @@
          (propertize " > " 'face `(:foreground "DodgerBlue2")))))
 
 (provide 'eshell-module)
+
+;;; eshell-module.el ends here

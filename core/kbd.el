@@ -1,11 +1,17 @@
 ;;; kbd.el --- This is a minor mode to manage Key Binding
 
+;;; Commentary:
+
+;; Custom key binding
+
+;;; Code:
+
 (defgroup kbd nil
   "GoT personal keybindings"
   :group 'projext)
 
 (defvar kbd-keymap-prefix (kbd "C-o")
-  "kbd keymap prefix.")
+  "Kbd keymap prefix.")
 
 (defvar kbd-mode-map
   (let ((map (make-sparse-keymap)))
@@ -75,3 +81,5 @@
   :group 'kbd)
 
 (provide 'kbd)
+
+;;; kbd.el ends here

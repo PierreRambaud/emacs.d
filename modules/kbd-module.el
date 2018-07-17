@@ -1,3 +1,11 @@
+;;; kbd-module.el --- Kbd module
+
+;;; Commentary:
+
+;; Kbd module
+
+;;; Code:
+
 (require 'kbd)
 
 (kbd-global-mode)
@@ -21,3 +29,5 @@
 (define-key kbd-mode-map (kbd "C-q b") 'backward-list)
 
 (provide 'kbd-module)
+
+;;; kbd-module.el ends here
