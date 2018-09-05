@@ -27,7 +27,6 @@
 (depends-on "flymake-php")
 (depends-on "flymake-phpcs")
 (depends-on "php-mode")
-(depends-on "twig-mode")
 (depends-on "phpunit")
 (depends-on "geben")
 
