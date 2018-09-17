@@ -45,6 +45,9 @@
 (depends-on "flymake-less")
 (depends-on "flymake-sass")
 
+;; Docker
+(depends-on "dockerfile-mode")
+
 ;; Git
 (depends-on "gitignore-mode")
 (depends-on "gitconfig-mode")
