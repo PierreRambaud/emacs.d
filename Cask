@@ -16,6 +16,7 @@
 
 ;; Ruby
 (depends-on "flymake-ruby")
+(depends-on "enh-ruby-mode")
 
 ;; Javascript
 (depends-on "js-comint")
