@@ -54,6 +54,7 @@
 (depends-on "gitconfig-mode")
 (depends-on "magit")
 (depends-on "magit-gitflow")
+(depends-on "git-gutter")
 
 ;; Theme
 (depends-on "gotham-theme")

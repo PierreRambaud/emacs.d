@@ -6,7 +6,7 @@
 
 ;;; Code:
 
-(require 'magit-module)
+(require 'git-module)
 (require 'prelude-module)
 (require 'direx-module)
 (require 'eshell-module)
