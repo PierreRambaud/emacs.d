@@ -20,6 +20,10 @@
 (require 'editorconfig)
 (editorconfig-mode 1)
 
+(add-hook 'python-mode-hook (lambda ()
+                              (require 'sphinx-doc)
+                              (sphinx-doc-mode t)))
+
 (provide 'python-module)
 
 ;;; python-module.el ends here

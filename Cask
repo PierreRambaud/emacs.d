@@ -6,6 +6,7 @@
 (depends-on "dash")
 (depends-on "diminish")
 (depends-on "s")
+(depends-on "sphinx-doc")
 
 ;; Python
 (depends-on "elpy")
