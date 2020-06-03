@@ -18,6 +18,9 @@
 (require 'guru-mode)
 (add-hook 'prog-mode-hook 'guru-mode)
 
+;;Ignore emoji
+(add-to-list 'face-ignored-fonts "Noto Color Emoji")
+
 ;;Global configuration
 (if (functionp 'tool-bar-mode) (tool-bar-mode -1))
 (if (functionp 'menu-bar-mode) (menu-bar-mode -1))
