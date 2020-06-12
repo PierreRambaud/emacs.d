@@ -18,6 +18,8 @@
   "The root dir of Emacs.")
 (defvar modules-dir (expand-file-name "modules" dir)
   "Modules root directory.")
+(defvar libs-dir (expand-file-name "libs" dir)
+  "Libraries root directory.")
 (defvar core-dir (expand-file-name "core" dir)
   "Core library root directory.")
 (defvar vendor-dir (expand-file-name "vendor" dir)
@@ -42,6 +44,7 @@
 
 (add-to-list 'load-path core-dir)
 (add-to-list 'load-path modules-dir)
+(add-to-list 'load-path libs-dir)
 (add-to-list 'load-path vendor-dir)
 (let ((default-directory emacsd-elpa-dir))
   (normal-top-level-add-subdirs-to-load-path))

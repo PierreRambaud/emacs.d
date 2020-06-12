@@ -8,10 +8,12 @@
 
 (require 'cl)
 (require 'php-mode)
+(require 'php-doc-block)
 
 (add-hook 'php-mode-hook (lambda ()
                            (require 'company-php)
                            (company-mode t)
+                           (local-set-key (kbd "<C-tab>") 'php-doc-block)
                            (ac-php-core-eldoc-setup)
                            (make-local-variable 'company-backends)
                            (add-to-list 'company-backends 'company-ac-php-backend)
