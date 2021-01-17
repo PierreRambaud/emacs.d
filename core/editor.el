@@ -63,8 +63,7 @@
 
 ;; automatically save buffers associated with files on buffer switch
 ;; and on windows switch
-(defun prelude-auto-save-command ()
-  "Save the current buffer if `prelude-auto-save' is not nil."
+(defun editor-auto-save-command ()
   (when buffer-file-name
     (buffer-modified-p (current-buffer))
     (file-writable-p buffer-file-name)
@@ -83,9 +82,9 @@ The body of the advice is in BODY."
 ;; advise all window switching functions
 (advise-commands "auto-save"
                  (switch-to-buffer other-window windmove-up windmove-down windmove-left windmove-right)
-                 (prelude-auto-save-command))
+                 (editor-auto-save-command))
 
-(add-hook 'mouse-leave-buffer-hook 'prelude-auto-save-command)
+(add-hook 'mouse-leave-buffer-hook 'editor-auto-save-command)
 
 ;; highlight the current line
 (global-hl-line-mode +1)

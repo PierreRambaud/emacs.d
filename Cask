@@ -1,5 +1,6 @@
 (source gnu)
 (source melpa)
+(source melpa-stable)
 
 (depends-on "package-safe-delete")
 (depends-on "crux")
@@ -11,9 +12,7 @@
 ;; Python
 (depends-on "elpy")
 (depends-on "flymake-python-pyflakes")
-(depends-on "nose")
 (depends-on "ansible")
-(depends-on "editorconfig")
 
 ;; Ruby
 (depends-on "flymake-ruby")
@@ -48,7 +47,9 @@
 (depends-on "flymake-sass")
 
 ;; Docker
+(depends-on "docker")
 (depends-on "dockerfile-mode")
+(depends-on "docker-tramp")
 
 ;; Git
 (depends-on "gitignore-mode")

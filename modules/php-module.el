@@ -6,7 +6,7 @@
 
 ;;; Code:
 
-(require 'cl)
+(require 'cl-lib)
 (require 'php-mode)
 (require 'php-doc-block)
 

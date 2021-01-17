@@ -9,7 +9,6 @@
 ;; Projext provide an extension for projectile and project-persist utilities
 
 ;;; Code:
-(package-initialize)
 
 (when (version< emacs-version "24.4")
   (error "Configuration requires at least GNU Emacs 24.4, but you're running %s" emacs-version))
