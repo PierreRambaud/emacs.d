@@ -1,7 +1,8 @@
 # Emacs.d
 
-This repository contains my emacs configuration largely inspired from [Prelude](https://githu.com/bbatsov/prelude) repositories.
+This repository contains my emacs configuration largely inspired from [Prelude](https://github.com/bbatsov/prelude) repositories.
 
+It has been tested on Emacs 28+
 
 ## Installation
 

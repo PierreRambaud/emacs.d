@@ -7,7 +7,6 @@
 ;;; Code:
 
 (require 'git-module)
-(require 'prelude-module)
 (require 'direx-module)
 (require 'eshell-module)
 (require 'helm-module)

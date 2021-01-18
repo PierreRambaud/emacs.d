@@ -6,6 +6,8 @@
 
 ;;; Code:
 
+(require 'iedit)
+
 (setq backup-directory-alist
       `((".*" . ,backup-dir)))
 (setq auto-save-file-name-transforms
@@ -19,12 +21,10 @@
 
 (show-smartparens-global-mode +1)
 (smartparens-global-mode +1)
+(smartparens-mode +1)
 
 ;; disable annoying blink-matching-paren
 (setq blink-matching-paren nil)
-
-;; diminish keeps the modeline tidy
-(require 'diminish)
 
 ;; meaningful names for buffers with the same name
 (require 'uniquify)
@@ -197,6 +197,7 @@ The body of the advice is in BODY."
 (require 'whitespace)
 (setq whitespace-line-column 80) ;; limit line length
 (setq whitespace-style '(face tabs empty trailing lines-tail))
+(whitespace-mode +1)
 
 ;; Undo tree mode
 (require 'undo-tree)

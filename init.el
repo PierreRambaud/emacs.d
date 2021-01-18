@@ -21,8 +21,6 @@
   "Libraries root directory.")
 (defvar core-dir (expand-file-name "core" dir)
   "Core library root directory.")
-(defvar vendor-dir (expand-file-name "vendor" dir)
-  "Vendor's code not packaged.")
 (defvar var-dir (expand-file-name "var" dir)
   "Var/ root directory.")
 (defvar cask-dir (expand-file-name ".cask" dir)
@@ -44,7 +42,6 @@
 (add-to-list 'load-path core-dir)
 (add-to-list 'load-path modules-dir)
 (add-to-list 'load-path libs-dir)
-(add-to-list 'load-path vendor-dir)
 (let ((default-directory emacsd-elpa-dir))
   (normal-top-level-add-subdirs-to-load-path))
 

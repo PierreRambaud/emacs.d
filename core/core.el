@@ -17,6 +17,7 @@
 
 (require 'guru-mode)
 (add-hook 'prog-mode-hook 'guru-mode)
+(guru-mode +1)
 
 ;;Ignore emoji
 (add-to-list 'face-ignored-fonts "Noto Color Emoji")
@@ -44,8 +45,13 @@
 (require 'project-persist)
 (setq project-persist-settings-dir (expand-file-name "project-persist" var-dir))
 (setq project-persist-auto-save-global nil)
+
 (require 'projectile)
+
+;; diminish keeps the modeline tidy
 (require 'diminish)
+(diminish 'guru-mode)
+
 (setq projectile-cache-file (expand-file-name "projectile.cache" var-dir))
 (setq projectile-known-projects-file (expand-file-name "projectile-bookmarks.eld" var-dir))
 (projectile-mode t)
