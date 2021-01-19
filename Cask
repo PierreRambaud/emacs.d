@@ -13,6 +13,7 @@
 (depends-on "elpy")
 (depends-on "flymake-python-pyflakes")
 (depends-on "ansible")
+(depends-on "helm-pydoc")
 
 ;; Ruby
 (depends-on "flymake-ruby")
@@ -52,6 +53,8 @@
 (depends-on "docker-tramp")
 
 ;; Git
+(depends-on "git-commit")
+(depends-on "diff-hl")
 (depends-on "gitignore-mode")
 (depends-on "gitconfig-mode")
 (depends-on "magit")
@@ -65,6 +68,7 @@
 ;; Emacs specific
 (depends-on "anzu")
 (depends-on "direx")
+(depends-on "expand-region")
 (depends-on "flx-ido")
 (depends-on "flycheck")
 (depends-on "flymake-cursor")
@@ -82,6 +86,7 @@
 (depends-on "iedit")
 (depends-on "ido-completing-read+")
 (depends-on "multiple-cursors")
+(depends-on "nlinum")
 (depends-on "ov")
 (depends-on "popwin")
 (depends-on "powerline")

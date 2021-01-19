@@ -148,6 +148,8 @@ The body of the advice is in BODY."
 ;; enable erase-buffer command
 (put 'erase-buffer 'disabled nil)
 
+(require 'expand-region)
+
 ;; bookmarks
 (require 'bookmark)
 (setq bookmark-default-file (expand-file-name "bookmarks" savefile-dir)
@@ -205,6 +207,10 @@ The body of the advice is in BODY."
 
 ;; enable yaml-mode
 (require 'yaml-mode)
+
+;; enable nlinum
+(require 'nlinum)
+(global-nlinum-mode t)
 
 (provide 'editor)
 
