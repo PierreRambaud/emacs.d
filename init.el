@@ -58,5 +58,5 @@
     (load-file user-config-file)))
 
 ;; Load theme
-(require 'distinguished-theme)
-(load-theme 'distinguished t)
+(require 'gotham-theme)
+(load-theme 'gotham t)
