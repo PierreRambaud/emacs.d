@@ -68,6 +68,7 @@
 (depends-on "flx-ido")
 (depends-on "flycheck")
 (depends-on "flymake-cursor")
+(depends-on "fzf")
 (depends-on "guru-mode")
 (depends-on "helm")
 (depends-on "helm-ag")
