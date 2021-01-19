@@ -91,7 +91,6 @@
 (depends-on "rainbow-mode")
 (depends-on "rainbow-delimiters")
 (depends-on "smartparens")
-(depends-on "smex")
 (depends-on "tramp")
 (depends-on "undo-tree")
 (depends-on "volatile-highlights")

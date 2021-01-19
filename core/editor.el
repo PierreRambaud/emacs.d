@@ -134,13 +134,6 @@ The body of the advice is in BODY."
 ;; disable ido faces to see flx highlights
 (setq ido-use-faces nil)
 
-;; smex, remember recently and most frequently used commands
-(require 'smex)
-(setq smex-save-file (expand-file-name ".smex-items" savefile-dir))
-(smex-initialize)
-(global-set-key (kbd "M-x") 'smex)
-(global-set-key (kbd "M-X") 'smex-major-mode-commands)
-
 (set-default 'imenu-auto-rescan t)
 
 ;; enable narrowing commands
