@@ -9,6 +9,8 @@
 (require 'cl-lib)
 (require 'php-mode)
 (require 'php-doc-block)
+(require 'flymake-php)
+(require 'flymake-phpcs)
 
 (add-hook 'php-mode-hook (lambda ()
                            (require 'company-php)
