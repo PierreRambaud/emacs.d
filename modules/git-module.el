@@ -6,10 +6,14 @@
 
 ;;; Code:
 
+(require 'git-commit)
+
 (require 'magit)
 (require 'magit-gitflow)
 (add-hook 'magit-flow-hook 'turn-on-magit-gitflow)
 
+(require 'gitconfig-mode)
+(require 'gitignore-mode)
 
 (require 'git-gutter)
 (global-git-gutter-mode t)
@@ -27,6 +31,12 @@
 (set-face-background 'git-gutter:modified "yellow")
 (set-face-foreground 'git-gutter:added "green")
 (set-face-foreground 'git-gutter:deleted "red")
+
+;; diff-hl
+(require 'diff-hl)
+(global-diff-hl-mode +1)
+(add-hook 'dired-mode-hook 'diff-hl-dired-mode)
+(add-hook 'magit-post-refresh-hook 'diff-hl-magit-post-refresh)
 
 (provide 'git-module)
 

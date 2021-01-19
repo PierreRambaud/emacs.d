@@ -23,5 +23,6 @@
 (require 'python-module)
 (require 'ruby-module)
 (require 'kbd-module)
+(require 'term-module)
 
 ;;; modules.el ends here

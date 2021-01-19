@@ -6,6 +6,7 @@
 
 ;;; Code:
 
+(require 'helm-pydoc)
 (require 'elpy)
 
 (elpy-enable)
