@@ -210,6 +210,9 @@ The body of the advice is in BODY."
 ;; enable winner-mode to manage window
 (winner-mode +1)
 
+;; enable yaml-mode
+(require 'yaml-mode)
+
 (provide 'editor)
 
 ;;; editor.el ends here
