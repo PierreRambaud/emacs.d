@@ -26,6 +26,8 @@
 (define-key kbd-mode-map (kbd "C-q f") 'forward-list)
 (define-key kbd-mode-map (kbd "C-q b") 'backward-list)
 (define-key kbd-mode-map (kbd "C-c b") 'crux-switch-to-previous-buffer)
+(define-key kbd-mode-map (kbd "C-c d") 'crux-duplicate-current-line-or-region)
+(define-key kbd-mode-map (kbd "C-c b") 'crux-switch-to-previous-buffer)
 
 (provide 'kbd-module)
 

@@ -6,7 +6,9 @@
 
 ;;; Code:
 
+(require 'ansible-module)
 (require 'git-module)
+(require 'quickrun-module)
 (require 'direx-module)
 (require 'eshell-module)
 (require 'helm-module)

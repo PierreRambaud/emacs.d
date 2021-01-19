@@ -5,7 +5,6 @@
 ;; Custom key binding
 
 ;;; Code:
-
 (defgroup kbd nil
   "GoT personal keybindings"
   :group 'projext)
