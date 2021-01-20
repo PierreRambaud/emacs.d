@@ -90,6 +90,7 @@
 (depends-on "iedit")
 (depends-on "ido-completing-read+")
 (depends-on "multiple-cursors")
+(depends-on "neotree")
 (depends-on "nlinum")
 (depends-on "ov")
 (depends-on "popwin")
