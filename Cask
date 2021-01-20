@@ -21,7 +21,6 @@
 
 ;; Javascript
 (depends-on "js-comint")
-(depends-on "web-mode")
 
 ;; Php
 (depends-on "ac-php")
@@ -29,8 +28,12 @@
 (depends-on "flymake-php")
 (depends-on "flymake-phpcs")
 (depends-on "php-mode")
+(depends-on "php-eldoc")
 (depends-on "phpunit")
 (depends-on "geben")
+
+;; Web
+(depends-on "web-mode")
 
 ;; Go
 (depends-on "flymake-go")

@@ -7,6 +7,8 @@
 ;;; Code:
 
 (require 'cl-lib)
+(require 'php-eldoc)
+(require 'eldoc)
 (require 'php-mode)
 (require 'php-doc-block)
 (require 'flymake-php)
