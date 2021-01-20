@@ -78,6 +78,9 @@
 
 (add-hook 'flycheck-mode-hook #'my/use-eslint-from-node-modules)
 
+(require 'company-web-html)
+(define-key web-mode-map (kbd "C-'") 'company-web-html)
+
 (provide 'web-module)
 
 ;;; web-module.el ends here

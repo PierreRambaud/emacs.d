@@ -212,6 +212,11 @@ The body of the advice is in BODY."
 (require 'nlinum)
 (global-nlinum-mode t)
 
+
+;; Company mode
+(require 'company)
+(add-hook 'after-init-hook 'global-company-mode)
+
 (provide 'editor)
 
 ;;; editor.el ends here

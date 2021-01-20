@@ -7,6 +7,7 @@
 ;;; Code:
 
 (require 'ansible-module)
+(require 'company-module)
 (require 'git-module)
 (require 'quickrun-module)
 (require 'direx-module)

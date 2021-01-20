@@ -30,6 +30,7 @@
 (setq phpunit-colorize "auto")
 (setq phpunit-program "./bin/phpunit")
 
+
 (provide 'php-module)
 
 ;;; php-module.el ends here
