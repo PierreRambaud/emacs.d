@@ -21,6 +21,7 @@
 
 ;; Javascript
 (depends-on "js-comint")
+(depends-on "json-mode")
 
 ;; Php
 (depends-on "ac-php")

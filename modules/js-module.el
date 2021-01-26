@@ -6,6 +6,7 @@
 
 ;;; Code:
 
+(require 'json-mode)
 (require 'js-comint)
 
 (setq js-indent-level 4)
