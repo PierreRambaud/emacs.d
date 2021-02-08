@@ -32,6 +32,7 @@
 (depends-on "php-eldoc")
 (depends-on "phpunit")
 (depends-on "geben")
+(depends-on "feature-mode")
 
 ;; Web
 (depends-on "web-mode")

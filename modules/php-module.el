@@ -13,6 +13,9 @@
 (require 'php-doc-block)
 (require 'flymake-php)
 (require 'flymake-phpcs)
+(require 'feature-mode)
+
+(add-to-list 'auto-mode-alist '("\.feature$" . feature-mode))
 
 (add-hook 'php-mode-hook (lambda ()
                            (require 'company-php)
