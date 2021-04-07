@@ -112,6 +112,9 @@ The body of the advice is in BODY."
 
 ;; tramp, for sudo access
 (require 'tramp)
+(require 'vagrant-tramp)
+(require 'helm-tramp)
+
 ;; keep in mind known issues with zsh - see emacs wiki
 (setq tramp-default-method "ssh")
 
