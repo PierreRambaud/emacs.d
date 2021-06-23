@@ -66,6 +66,7 @@
 (depends-on "magit")
 (depends-on "magit-gitflow")
 (depends-on "git-gutter")
+(depends-on "browse-at-remote")
 
 ;; Theme
 (depends-on "gotham-theme")

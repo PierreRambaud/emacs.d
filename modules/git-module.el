@@ -38,6 +38,7 @@
 ;; (add-hook 'dired-mode-hook 'diff-hl-dired-mode)
 (add-hook 'magit-post-refresh-hook 'diff-hl-magit-post-refresh)
 
-(provide 'git-module)
+(require 'browse-at-remote)
 
+(provide 'git-module)
 ;;; git-module.el ends here
