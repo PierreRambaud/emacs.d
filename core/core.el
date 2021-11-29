@@ -86,10 +86,6 @@
       ps-line-number-step 1
       ps-print-color-p (quote black-white))
 
-;; Changelog config
-(setq add-log-full-name "GoT"
-      add-log-mailing-address "pierre.rambaud86@gmail.com")
-
 ;; Auto mode
 (add-to-list 'auto-mode-alist '("Cask" . emacs-lisp-mode))
 

@@ -110,6 +110,23 @@
 ;; enable typescript-tslint checker
 (flycheck-add-mode 'typescript-tslint 'web-mode)
 
+;; let smartparens handle these
+(setq web-mode-enable-auto-quoting nil
+      web-mode-enable-auto-pairing t)
+
+;; 1. Remove web-mode auto pairs whose end pair starts with a latter
+;;    (truncated autopairs like <?p and hp ?>). Smartparens handles these
+;;    better.
+;; 2. Strips out extra closing pairs to prevent redundant characters
+;;    inserted by smartparens.
+(dolist (alist web-mode-engines-auto-pairs)
+  (setcdr alist
+          (cl-loop for pair in (cdr alist)
+                   unless (string-match-p "^[a-z-]" (cdr pair))
+                   collect (cons (car pair)
+                                 (string-trim-right (cdr pair) "\\(?:>\\|]\\|}\\)+")))))
+(setf (alist-get nil web-mode-engines-auto-pairs) nil)
+
 (provide 'web-module)
 
 ;;; web-module.el ends here

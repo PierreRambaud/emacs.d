@@ -17,3 +17,4 @@ geben
 elpa
 elpy
 transient
+*.log
