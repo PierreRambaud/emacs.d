@@ -12,9 +12,6 @@
 (require 'magit-gitflow)
 (add-hook 'magit-flow-hook 'turn-on-magit-gitflow)
 
-(require 'gitconfig-mode)
-(require 'gitignore-mode)
-
 (require 'git-gutter)
 (global-git-gutter-mode t)
 

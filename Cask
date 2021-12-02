@@ -63,8 +63,6 @@
 ;; Git
 (depends-on "git-commit")
 (depends-on "diff-hl")
-(depends-on "gitignore-mode")
-(depends-on "gitconfig-mode")
 (depends-on "magit")
 (depends-on "magit-gitflow")
 (depends-on "git-gutter")
