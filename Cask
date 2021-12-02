@@ -35,7 +35,6 @@
 (depends-on "feature-mode")
 
 ;; Web
-(depends-on "tide")
 (depends-on "web-mode")
 (depends-on "company-web")
 
