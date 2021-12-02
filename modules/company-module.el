@@ -7,6 +7,7 @@
 ;;; Code:
 
 (require 'company)
+(require 'company-web-html)
 (require 'diminish)
 
 (setq company-idle-delay 0.5)

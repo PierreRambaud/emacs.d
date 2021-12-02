@@ -1,4 +1,4 @@
-;;; quickrun-module.el --- Direx module
+;;; quickrun-module.el --- Quickrun module
 
 ;;; Commentary:
 

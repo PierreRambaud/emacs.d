@@ -8,7 +8,6 @@
 
 (require 'web-mode)
 (require 'flycheck)
-(require 'company-web-html)
 
 (add-to-list 'auto-mode-alist '("\\.scss$" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.jsx$" . web-mode))

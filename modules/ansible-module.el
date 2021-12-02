@@ -1,4 +1,4 @@
-;;; ansible-module.el --- Direx module
+;;; ansible-module.el --- Ansible module
 
 ;;; Commentary:
 

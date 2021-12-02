@@ -44,6 +44,8 @@
 (depends-on "go-mode")
 
 ;; Others languages
+(depends-on "lsp-mode")
+(depends-on "lsp-ui")
 (depends-on "feature-mode")
 (depends-on "go-mode")
 (depends-on "haskell-mode")

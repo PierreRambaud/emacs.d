@@ -18,3 +18,5 @@ elpa
 elpy
 transient
 *.log
+.cache/
+.lsp*
