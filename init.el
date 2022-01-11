@@ -10,8 +10,8 @@
 
 ;;; Code:
 
-(when (version< emacs-version "24.4")
-  (error "Configuration requires at least GNU Emacs 24.4, but you're running %s" emacs-version))
+(when (version< emacs-version "28")
+  (error "Configuration requires at least GNU Emacs 28, but you're running %s" emacs-version))
 
 (defvar dir (file-name-directory load-file-name)
   "The root dir of Emacs.")
@@ -44,6 +44,9 @@
 (add-to-list 'load-path libs-dir)
 (let ((default-directory emacsd-elpa-dir))
   (normal-top-level-add-subdirs-to-load-path))
+
+(eval-when-compile
+  (require 'use-package))
 
 ;; Use core libraries
 (require 'core)

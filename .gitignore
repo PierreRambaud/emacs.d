@@ -20,3 +20,4 @@ transient
 *.log
 .cache/
 .lsp*
+lsp-cache/

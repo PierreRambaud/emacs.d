@@ -2,6 +2,7 @@
 (source melpa)
 (source melpa-stable)
 
+(depends-on "use-package")
 (depends-on "package-safe-delete")
 (depends-on "crux")
 (depends-on "dash")
@@ -31,6 +32,8 @@
 (depends-on "php-mode")
 (depends-on "php-eldoc")
 (depends-on "phpunit")
+(depends-on "phpactor")
+(depends-on "company-phpactor")
 (depends-on "geben")
 (depends-on "feature-mode")
 
@@ -42,6 +45,9 @@
 (depends-on "flymake-go")
 (depends-on "golint")
 (depends-on "go-mode")
+
+;; Arduino
+(depends-on "arduino-mode")
 
 ;; Others languages
 (depends-on "lsp-mode")
