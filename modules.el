@@ -6,7 +6,6 @@
 
 ;;; Code:
 
-(require 'lsp-module)
 (require 'ansible-module)
 (require 'company-module)
 (require 'git-module)

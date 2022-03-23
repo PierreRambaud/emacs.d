@@ -32,6 +32,7 @@
       helm-buffers-fuzzy-matching           t
       helm-move-to-line-cycle-in-source     t
       helm-ff-search-library-in-sexp        t
+      helm-ff-skip-boring-files             t
       helm-ff-file-name-history-use-recentf t)
 
 ;; The default "C-x c" is quite close to "C-x C-c", which quits Emacs.
