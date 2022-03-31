@@ -80,7 +80,6 @@
 
 ;; Emacs specific
 (depends-on "anzu")
-(depends-on "direx")
 (depends-on "expand-region")
 (depends-on "flx-ido")
 (depends-on "flycheck")

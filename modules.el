@@ -10,7 +10,7 @@
 (require 'company-module)
 (require 'git-module)
 (require 'quickrun-module)
-(require 'direx-module)
+(require 'dired-module)
 (require 'eshell-module)
 (require 'helm-module)
 (require 'js-module)

@@ -2,7 +2,7 @@
 
 ;;; Commentary:
 
-;; Direx module
+;; Ansible module
 
 ;;; Code:
 

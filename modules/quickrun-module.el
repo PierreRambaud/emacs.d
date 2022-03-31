@@ -2,7 +2,7 @@
 
 ;;; Commentary:
 
-;; Direx module
+;; Quickrun module
 
 ;;; Code:
 
