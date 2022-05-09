@@ -51,6 +51,8 @@
 
 ;; Others languages
 (depends-on "lsp-mode")
+(depends-on "lsp-sonarlint")
+(depends-on "helm-lsp")
 (depends-on "lsp-ui")
 (depends-on "feature-mode")
 (depends-on "go-mode")
@@ -114,3 +116,4 @@
 (depends-on "vagrant-tramp")
 (depends-on "undo-tree")
 (depends-on "volatile-highlights")
+(depends-on "which-key")

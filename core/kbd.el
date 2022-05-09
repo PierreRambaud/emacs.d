@@ -25,7 +25,7 @@
       (define-key prefix-map (kbd "g s") 'magit-status)
       (define-key prefix-map (kbd "g t") 'ac-php-find-symbol-at-point)
       (define-key prefix-map (kbd "h f") 'helm-find-files)
-      (define-key prefix-map (kbd "h g") 'helm-ls-git-ls)
+      (define-key prefix-map (kbd "h g") 'helm-ls-git)
       (define-key prefix-map (kbd "h q") 'helm-quickrun)
       (define-key prefix-map (kbd "h r") 'helm-git-grep)
       (define-key prefix-map (kbd "h p") 'helm-projectile-grep)
