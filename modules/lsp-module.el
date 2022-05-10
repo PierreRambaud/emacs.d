@@ -17,6 +17,9 @@
          (lsp-mode . lsp-enable-which-key-integration))
   :commands lsp)
 
+(use-package lsp-lens)
+(use-package lsp-modeline)
+(use-package lsp-headerline)
 (use-package lsp-ui :commands lsp-ui-mode)
 (use-package helm-lsp :commands helm-lsp-workspace-symbol)
 
