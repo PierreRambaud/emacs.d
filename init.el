@@ -49,6 +49,7 @@
   (require 'use-package))
 
 ;; Use core libraries
+(require 'pkg-info)
 (require 'core)
 (require 'editor)
 

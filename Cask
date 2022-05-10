@@ -9,6 +9,7 @@
 (depends-on "diminish")
 (depends-on "s")
 (depends-on "sphinx-doc")
+(depends-on "pkg-info")
 
 ;; Python
 (depends-on "elpy")
@@ -51,9 +52,10 @@
 
 ;; Others languages
 (depends-on "lsp-mode")
-(depends-on "lsp-sonarlint")
 (depends-on "helm-lsp")
 (depends-on "lsp-ui")
+(depends-on "lsp-ivy")
+(depends-on "dap-mode")
 (depends-on "feature-mode")
 (depends-on "go-mode")
 (depends-on "haskell-mode")

@@ -11,8 +11,8 @@
   ;; set prefix for lsp-command-keymap (few alternatives - "C-l", "C-c l")
   (setq lsp-keymap-prefix "C-c l")
   :hook (
-         (web-mode . lsp)
-         (js-mode . lsp)
+         (web-mode . lsp-deferred)
+         (js-mode . lsp-deferred)
          ;; if you want which-key integration
          (lsp-mode . lsp-enable-which-key-integration))
   :commands lsp)
@@ -24,16 +24,17 @@
     :config
     (which-key-mode))
 
-(use-package lsp-sonarlint-php)
-(setq lsp-sonarlint-php-enabled t)
-
 ;; lsp-mode
+(setq lsp-enable-file-watchers nil)
 (setq lsp-log-io nil) ;; Don't log everything = speed
 (setq lsp-keymap-prefix "C-c l")
-(setq lsp-restart 'auto-restart)
+(setq lsp-ui-doc-webkit t)
+(setq lsp-ui-doc-enable t)
 (setq lsp-ui-sideline-show-diagnostics t)
 (setq lsp-ui-sideline-show-hover t)
 (setq lsp-ui-sideline-show-code-actions t)
+
+(setq lsp-restart 'auto-restart)
 
 (provide 'lsp-module)
 
