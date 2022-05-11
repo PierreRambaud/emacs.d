@@ -40,6 +40,7 @@
 
 ;; Web
 (depends-on "web-mode")
+(depends-on "typescript-mode")
 (depends-on "company-web")
 
 ;; Go

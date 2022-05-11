@@ -7,6 +7,7 @@
 ;;; Code:
 
 (require 'web-mode)
+(require 'typescript-mode)
 (require 'flycheck)
 
 (add-to-list 'auto-mode-alist '("\\.scss$" . web-mode))
@@ -15,8 +16,8 @@
 (add-to-list 'auto-mode-alist '("\\.vue$" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.twig$" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.tpl$" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.ts$" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.tsx$" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.ts$" . typescript-mode))
+(add-to-list 'auto-mode-alist '("\\.tsx$" . typescript-mode))
 
 
 ;; turn on flychecking globally
