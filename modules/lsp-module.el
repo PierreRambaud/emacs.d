@@ -29,6 +29,7 @@
     (which-key-mode))
 
 ;; lsp-mode
+(setq lsp-clients-typescript-max-ts-server-memory 512)
 (setq lsp-enable-file-watchers nil)
 (setq lsp-log-io nil) ;; Don't log everything = speed
 (setq lsp-keymap-prefix "C-c l")
