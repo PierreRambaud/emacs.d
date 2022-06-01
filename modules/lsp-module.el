@@ -21,6 +21,9 @@
 (use-package lsp-lens)
 (use-package lsp-modeline)
 (use-package lsp-headerline)
+(use-package lsp-ui-sideline)
+(use-package lsp-ui-peek)
+(use-package lsp-ui-doc)
 (use-package lsp-ui :commands lsp-ui-mode)
 (use-package helm-lsp :commands helm-lsp-workspace-symbol)
 

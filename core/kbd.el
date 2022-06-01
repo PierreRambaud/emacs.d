@@ -32,6 +32,7 @@
       (define-key prefix-map (kbd "h w") 'helm-swoop)
       (define-key prefix-map (kbd "h y") 'helm-c-yas-complete)
       (define-key prefix-map (kbd "i") 'iedit-mode)
+      (define-key prefix-map (kbd "u") 'narrow-or-widen-dwim)
       (define-key prefix-map (kbd "k") 'set-cmd-to-kbd)
       (define-key prefix-map (kbd "m <") 'mc/mark-previous-like-this)
       (define-key prefix-map (kbd "m >") 'mc/mark-next-like-this)
