@@ -21,3 +21,4 @@ transient
 .cache/
 .lsp*
 lsp-cache/
+/url

@@ -41,6 +41,7 @@
 ;; Web
 (depends-on "web-mode")
 (depends-on "typescript-mode")
+(depends-on "jest")
 (depends-on "company-web")
 
 ;; Go
@@ -52,6 +53,7 @@
 (depends-on "arduino-mode")
 
 ;; Others languages
+(depends-on "company-mode")
 (depends-on "lsp-mode")
 (depends-on "helm-lsp")
 (depends-on "lsp-ui")
