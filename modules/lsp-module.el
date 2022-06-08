@@ -9,26 +9,7 @@
 (use-package lsp-mode
   :init
   ;; set prefix for lsp-command-keymap (few alternatives - "C-l", "C-c l")
-  (setq lsp-ui-sideline-enable t)
-  (setq lsp-ui-doc-enable t)
-  (setq lsp-ui-peek-enable t)
-  (setq lsp-ui-peek-always-show t)
-  (setq lsp-auto-configure t)
-
-  (setq lsp-clients-typescript-max-ts-server-memory 512)
-  (setq lsp-enable-file-watchers nil)
-  (setq lsp-log-io nil) ;; Don't log everything = speed
   (setq lsp-keymap-prefix "C-c l")
-  (setq lsp-ui-doc-webkit t)
-  (setq lsp-ui-doc-enable t)
-  (setq lsp-ui-sideline-show-diagnostics t)
-  (setq lsp-ui-sideline-show-hover t)
-  (setq lsp-ui-sideline-show-code-actions t)
-  (setq lsp-javascript-display-property-declaration-type-hints t)
-  (setq lsp-javascript-display-return-type-hints t)
-  (setq lsp-eslint-auto-fix-on-save t)
-  (setq lsp-eslint-lint-task-enable t)
-  (setq lsp-restart 'auto-restart)
 
   :hook (
          (web-mode . lsp-deferred)
@@ -48,13 +29,30 @@
 (use-package lsp-ui :commands lsp-ui-mode)
 (use-package helm-lsp :commands helm-lsp-workspace-symbol)
 
-(with-eval-after-load 'lsp-mode
-  ;; :global/:workspace/:file
-  (setq lsp-modeline-diagnostics-scope :workspace))
+(setq lsp-auto-configure t)
+(setq lsp-restart 'auto-restart)
+
+(setq lsp-clients-typescript-max-ts-server-memory 512)
+(setq lsp-enable-file-watchers nil)
+(setq lsp-log-io nil) ;; Don't log everything = speed
+
+(setq lsp-ui-doc-enable t)
+(setq lsp-ui-doc-enable t)
+(setq lsp-ui-doc-webkit t)
+(setq lsp-ui-peek-always-show t)
+(setq lsp-ui-peek-enable t)
+(setq lsp-ui-sideline-enable t)
+(setq lsp-ui-sideline-show-code-actions t)
+(setq lsp-ui-sideline-show-diagnostics t)
+(setq lsp-ui-sideline-show-hover t)
+
+(setq lsp-javascript-display-property-declaration-type-hints t)
+(setq lsp-javascript-display-return-type-hints t)
+(setq lsp-eslint-auto-fix-on-save t)
 
 (use-package which-key
-    :config
-    (which-key-mode))
+  :config
+  (which-key-mode))
 
 ;; lsp-mode
 
