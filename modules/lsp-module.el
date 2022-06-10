@@ -32,7 +32,7 @@
 (setq lsp-auto-configure t)
 (setq lsp-restart 'auto-restart)
 
-(setq lsp-clients-typescript-max-ts-server-memory nil)
+(setq lsp-clients-typescript-max-ts-server-memory 512)
 (setq lsp-enable-file-watchers nil)
 (setq lsp-log-io nil) ;; Don't log everything = speed
 
