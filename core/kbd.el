@@ -19,7 +19,7 @@
       (define-key prefix-map (kbd "a d") 'ansible::decrypt-buffer)
       (define-key prefix-map (kbd "a e") 'ansible::encrypt-buffer)
       (define-key prefix-map (kbd "b") 'helm-buffers-right-side)
-      (define-key prefix-map (kbd "e f") 'lsp-eslint-apply-all-fixes)
+      (define-key prefix-map (kbd "f e") 'lsp-eslint-apply-all-fixes)
       (define-key prefix-map (kbd "f n") 'flymake-goto-next-error)
       (define-key prefix-map (kbd "f p") 'flymake-goto-prev-error)
       (define-key prefix-map (kbd "g l") 'magit-log)
