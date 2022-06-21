@@ -41,6 +41,7 @@
 ;; Web
 (depends-on "web-mode")
 (depends-on "typescript-mode")
+(depends-on "tide")
 (depends-on "jest")
 (depends-on "company-web")
 

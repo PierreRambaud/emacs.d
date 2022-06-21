@@ -15,7 +15,6 @@
          (web-mode . lsp-deferred)
          (typescript-mode . lsp-deferred)
          (js-mode . lsp-deferred)
-         (php-mode . lsp-deferred)
          ;; if you want which-key integration
          (lsp-mode . lsp-enable-which-key-integration))
   :commands lsp)
@@ -32,23 +31,23 @@
 (setq lsp-auto-configure t)
 (setq lsp-restart 'auto-restart)
 
-(setq lsp-clients-typescript-max-ts-server-memory 512)
+(setq lsp-clients-typescript-max-ts-server-memory 1024)
 (setq lsp-enable-file-watchers nil)
 (setq lsp-log-io nil) ;; Don't log everything = speed
 
 (setq lsp-ui-doc-enable t)
-(setq lsp-ui-doc-enable t)
 (setq lsp-ui-doc-webkit t)
 (setq lsp-ui-peek-always-show t)
 (setq lsp-ui-peek-enable t)
+
+(setq lsp-javascript-suggest-complete-function-calls t)
+
 (setq lsp-ui-sideline-enable t)
 (setq lsp-ui-sideline-show-code-actions t)
 (setq lsp-ui-sideline-show-diagnostics t)
 (setq lsp-ui-sideline-show-hover t)
 
-(setq lsp-javascript-display-property-declaration-type-hints t)
-(setq lsp-javascript-display-return-type-hints t)
-(setq lsp-eslint-auto-fix-on-save t)
+(setq lsp-eslint-node-path "/opt/ndenv/shims/node")
 
 (use-package which-key
   :config
