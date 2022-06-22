@@ -51,6 +51,10 @@
 (setq lsp-eslint-node-path "/opt/ndenv/shims/node")
 (setq lsp-phpactor-path "~/.emacs.d/phpactor/vendor/phpactor/phpactor/bin/phpactor")
 
+(with-eval-after-load 'lsp-mode
+  ;; :global/:workspace/:file
+  (setq lsp-modeline-diagnostics-scope :workspace))
+
 (use-package which-key
   :config
   (which-key-mode))
