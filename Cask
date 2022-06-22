@@ -26,14 +26,12 @@
 (depends-on "json-mode")
 
 ;; Php
-(depends-on "ac-php")
 (depends-on "company-php")
 (depends-on "flymake-php")
 (depends-on "flymake-phpcs")
 (depends-on "php-mode")
 (depends-on "phpunit")
 (depends-on "phpactor")
-(depends-on "company-phpactor")
 (depends-on "geben")
 (depends-on "feature-mode")
 
@@ -66,6 +64,7 @@
 (depends-on "yaml-mode")
 (depends-on "flymake-less")
 (depends-on "flymake-sass")
+(depends-on "yasnippet")
 
 ;; Docker
 (depends-on "docker")

@@ -244,6 +244,10 @@ narrowed."
 (require 'company)
 (add-hook 'after-init-hook 'global-company-mode)
 
+;; Use yas-minor-mode on a per-buffer basis
+(require 'yasnippet)
+(yas-global-mode 1)
+
 ;; Neotree
 (require 'neotree)
 (defun neotree-project-dir ()

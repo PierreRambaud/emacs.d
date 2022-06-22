@@ -49,6 +49,7 @@
 (setq lsp-ui-sideline-show-hover t)
 
 (setq lsp-eslint-node-path "/opt/ndenv/shims/node")
+(setq lsp-phpactor-path "~/.emacs.d/phpactor/vendor/phpactor/phpactor/bin/phpactor")
 
 (use-package which-key
   :config
