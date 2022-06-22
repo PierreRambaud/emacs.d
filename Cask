@@ -26,6 +26,7 @@
 (depends-on "json-mode")
 
 ;; Php
+(depends-on "ac-php")
 (depends-on "company-php")
 (depends-on "flymake-php")
 (depends-on "flymake-phpcs")
