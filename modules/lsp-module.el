@@ -15,6 +15,7 @@
          (web-mode . lsp-deferred)
          (typescript-mode . lsp-deferred)
          (js-mode . lsp-deferred)
+         (php-mode . lsp-deferred)
          ;; if you want which-key integration
          (lsp-mode . lsp-enable-which-key-integration))
   :commands lsp)

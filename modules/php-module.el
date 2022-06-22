@@ -7,33 +7,27 @@
 ;;; Code:
 
 (require 'cl-lib)
-(require 'php-eldoc)
+(require 'ac-php)
 (require 'eldoc)
 (require 'php-mode)
 (require 'php-doc-block)
 (require 'flymake-php)
 (require 'flymake-phpcs)
 (require 'feature-mode)
-(use-package phpactor)
-(use-package company-phpactor)
-
-(use-package php-mode
-  ;;
-  :hook ((php-mode . (lambda () (set (make-local-variable 'company-backends)
-       '(;; list of backends
-         company-phpactor
-         company-files
-         ))))))
+(require 'php-mode)
+(require 'phpactor)
 
 (add-to-list 'auto-mode-alist '("\.feature$" . feature-mode))
 
 (add-hook 'php-mode-hook (lambda ()
+                           (require 'company-phpactor)
                            (require 'company-php)
                            (company-mode t)
                            (local-set-key (kbd "<C-tab>") 'php-doc-block)
                            (ac-php-core-eldoc-setup)
                            (make-local-variable 'company-backends)
                            (add-to-list 'company-backends 'company-ac-php-backend)
+                           (add-to-list 'company-backends 'company-files)
                            (subword-mode)
                            (flymake-php-load)
                            (c-set-offset 'case-label '+)
@@ -76,7 +70,8 @@
 
 (setq phpunit-stop-on-failure t)
 (setq phpunit-colorize "auto")
-(setq phpunit-program "./bin/phpunit")
+(setq phpunit-program "./vendor/bin/phpunit")
+(setq lsp-phpactor-path "~/.emacs.d/phpactor/vendor/phpactor/phpactor/bin/phpactor")
 
 
 (provide 'php-module)

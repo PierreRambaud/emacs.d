@@ -31,7 +31,6 @@
 (depends-on "flymake-php")
 (depends-on "flymake-phpcs")
 (depends-on "php-mode")
-(depends-on "php-eldoc")
 (depends-on "phpunit")
 (depends-on "phpactor")
 (depends-on "company-phpactor")
