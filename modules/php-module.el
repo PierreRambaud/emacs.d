@@ -7,13 +7,14 @@
 ;;; Code:
 
 (require 'cl-lib)
-(require 'ac-php)
-(require 'eldoc)
+;; (require 'ac-php)
+;; (require 'eldoc)
 (require 'php-mode)
 (require 'php-doc-block)
 (require 'flymake-php)
 (require 'flymake-phpcs)
 (require 'feature-mode)
+(require 'phpunit)
 (require 'php-mode)
 (require 'phpactor)
 
@@ -24,20 +25,14 @@
                            (require 'company-php)
                            (company-mode t)
                            (local-set-key (kbd "<C-tab>") 'php-doc-block)
-                           (ac-php-core-eldoc-setup)
+                           ;; (ac-php-core-eldoc-setup)
                            (make-local-variable 'company-backends)
-                           (add-to-list 'company-backends 'company-ac-php-backend)
+                           ;; (add-to-list 'company-backends 'company-ac-php-backend)
                            (add-to-list 'company-backends 'company-files)
                            (subword-mode)
                            (flymake-php-load)
                            (c-set-offset 'case-label '+)
                            (define-key php-mode-map (kbd "RET") 'newline-and-indent)))
-
-(add-hook 'php-mode-hook
-          (lambda ()
-            (make-local-variable 'eldoc-documentation-function)
-            (setq eldoc-documentation-function
-                  'phpactor-hover)))
 
 (define-transient-command php-transient-menu ()
   "Php"

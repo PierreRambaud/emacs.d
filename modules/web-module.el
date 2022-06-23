@@ -7,7 +7,8 @@
 ;;; Code:
 
 (require 'web-mode)
-;; (require 'typescript-mode)
+(require 'typescript-mode)
+(require 'jest-test-mode)
 (require 'tide)
 (require 'flycheck)
 
@@ -20,6 +21,8 @@
 (add-to-list 'auto-mode-alist '("\\.ts$" . typescript-mode))
 (add-to-list 'auto-mode-alist '("\\.tsx$" . typescript-mode))
 
+;; turn on jest test mode
+(add-hook 'typescript-mode-hook 'jest-test-mode)
 
 ;; turn on flychecking globally
 (add-hook 'after-init-hook #'global-flycheck-mode)

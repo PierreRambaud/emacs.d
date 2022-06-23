@@ -40,7 +40,7 @@
 (depends-on "web-mode")
 (depends-on "typescript-mode")
 (depends-on "tide")
-(depends-on "jest")
+(depends-on "jest-test-mode")
 (depends-on "company-web")
 
 ;; Go
@@ -52,19 +52,20 @@
 (depends-on "arduino-mode")
 
 ;; Others languages
-(depends-on "lsp-mode")
-(depends-on "helm-lsp")
-(depends-on "lsp-ui")
-(depends-on "lsp-ivy")
 (depends-on "dap-mode")
+(depends-on "eldoc")
 (depends-on "feature-mode")
+(depends-on "flymake-less")
+(depends-on "flymake-sass")
 (depends-on "go-mode")
 (depends-on "haskell-mode")
+(depends-on "helm-lsp")
+(depends-on "lsp-ivy")
+(depends-on "lsp-mode")
+(depends-on "lsp-ui")
 (depends-on "markdown-mode")
 (depends-on "puppet-mode")
 (depends-on "yaml-mode")
-(depends-on "flymake-less")
-(depends-on "flymake-sass")
 (depends-on "yasnippet")
 
 ;; Docker
