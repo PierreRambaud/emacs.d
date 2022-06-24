@@ -13,6 +13,7 @@
 (add-hook 'magit-flow-hook 'turn-on-magit-gitflow)
 
 (require 'git-gutter)
+(git-gutter:linum-setup)
 (global-git-gutter-mode t)
 
 ;; Jump to next/previous hunk
