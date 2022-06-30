@@ -248,6 +248,9 @@ narrowed."
 (require 'yasnippet)
 (yas-global-mode 1)
 
+;; enalbe multiple cursors
+(require 'multiple-cursors)
+
 ;; Neotree
 (require 'neotree)
 (defun neotree-project-dir ()
