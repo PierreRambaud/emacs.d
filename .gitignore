@@ -22,3 +22,4 @@ transient
 .lsp*
 lsp-cache/
 /url
+/phpactor

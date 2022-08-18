@@ -15,7 +15,7 @@
          (web-mode . lsp-deferred)
          (typescript-mode . lsp-deferred)
          (js-mode . lsp-deferred)
-         ;; (php-mode . lsp-deferred)
+         (php-mode . lsp-deferred)
          ;; if you want which-key integration
          (lsp-mode . lsp-enable-which-key-integration))
   :commands lsp)
@@ -49,7 +49,7 @@
 (setq lsp-ui-sideline-show-hover t)
 
 (setq lsp-eslint-node-path "/opt/ndenv/shims/node")
-(setq lsp-phpactor-path "~/.emacs.d/phpactor/vendor/phpactor/phpactor/bin/phpactor")
+(setq lsp-phpactor-path "~/.emacs.d/phpactor/bin/phpactor")
 
 (with-eval-after-load 'lsp-mode
   ;; :global/:workspace/:file

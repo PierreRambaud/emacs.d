@@ -66,8 +66,6 @@
 (setq phpunit-stop-on-failure t)
 (setq phpunit-colorize "auto")
 (setq phpunit-program "./vendor/bin/phpunit")
-(setq lsp-phpactor-path "~/.emacs.d/phpactor/vendor/phpactor/phpactor/bin/phpactor")
-
 
 (provide 'php-module)
 

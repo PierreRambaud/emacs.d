@@ -12,7 +12,6 @@
 (require 'helm-files)
 (require 'helm-ls-git)
 (require 'helm-project-persist)
-(require 'helm-projectile)
 (require 'helm-swoop)
 (require 'helm-mode)
 (require 'helm-git-grep)

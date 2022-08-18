@@ -24,7 +24,7 @@
       (define-key prefix-map (kbd "f p") 'flymake-goto-prev-error)
       (define-key prefix-map (kbd "g l") 'magit-log)
       (define-key prefix-map (kbd "g s") 'magit-status)
-      (define-key prefix-map (kbd "g t") 'lsp-goto-type-definition)
+      (define-key prefix-map (kbd "g t") 'phpactor-goto-definition)
       (define-key prefix-map (kbd "h g") 'helm-ls-git)
       (define-key prefix-map (kbd "h q") 'helm-quickrun)
       (define-key prefix-map (kbd "h r") 'helm-git-grep)
