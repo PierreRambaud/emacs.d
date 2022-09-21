@@ -7,8 +7,6 @@
 ;;; Code:
 
 (require 'cl-lib)
-;; (require 'ac-php)
-;; (require 'eldoc)
 (require 'php-mode)
 (require 'php-doc-block)
 (require 'flymake-php)
@@ -17,17 +15,15 @@
 (require 'phpunit)
 (require 'php-mode)
 (require 'phpactor)
+(require 'dap-php)
 
 (add-to-list 'auto-mode-alist '("\.feature$" . feature-mode))
 
 (add-hook 'php-mode-hook (lambda ()
-                           (require 'company-phpactor)
                            (require 'company-php)
                            (company-mode t)
                            (local-set-key (kbd "<C-tab>") 'php-doc-block)
-                           ;; (ac-php-core-eldoc-setup)
                            (make-local-variable 'company-backends)
-                           ;; (add-to-list 'company-backends 'company-ac-php-backend)
                            (add-to-list 'company-backends 'company-files)
                            (subword-mode)
                            (flymake-php-load)
@@ -66,6 +62,16 @@
 (setq phpunit-stop-on-failure t)
 (setq phpunit-colorize "auto")
 (setq phpunit-program "./vendor/bin/phpunit")
+
+(use-package which-key
+  :config
+  (which-key-mode))
+(add-hook 'php-mode-hook 'lsp)
+
+(with-eval-after-load 'lsp-mode
+  (add-hook 'lsp-mode-hook #'lsp-enable-which-key-integration)
+  (require 'dap-php)
+  (yas-global-mode))
 
 (provide 'php-module)
 

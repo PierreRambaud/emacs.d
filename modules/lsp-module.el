@@ -29,6 +29,7 @@
 (use-package lsp-ui :commands lsp-ui-mode)
 (use-package helm-lsp :commands helm-lsp-workspace-symbol)
 
+(setq lsp-response-timeout 30)
 (setq lsp-auto-configure t)
 (setq lsp-restart 'auto-restart)
 
@@ -42,6 +43,8 @@
 (setq lsp-ui-peek-enable t)
 
 (setq lsp-javascript-suggest-complete-function-calls t)
+
+(setq lsp-enable-indentation nil)
 
 (setq lsp-ui-sideline-enable t)
 (setq lsp-ui-sideline-show-code-actions t)

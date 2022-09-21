@@ -222,8 +222,13 @@ narrowed."
 (setq whitespace-style '(face tabs empty trailing lines-tail))
 (whitespace-mode +1)
 
-;; Undo tree mode
+
+;; supercharge your undo/redo with undo-tree
 (require 'undo-tree)
+;; autosave the undo-tree history
+(setq undo-tree-history-directory-alist
+      `((".*" . ,savefile-dir)))
+(setq undo-tree-auto-save-history t)
 (global-undo-tree-mode)
 (diminish 'undo-tree-mode)
 
@@ -250,6 +255,11 @@ narrowed."
 
 ;; enalbe multiple cursors
 (require 'multiple-cursors)
+
+;; enable dap
+(require 'dap-ui)
+(require 'dap-mouse)
+(require 'dap-mode)
 
 ;; Neotree
 (require 'neotree)

@@ -8,13 +8,6 @@
 (require 'package)
 (require 'crux)
 
-(defun init-packages()
-  "Initialize packages directory."
-  (add-to-list 'package-archives
-               '("melpa" . "http://melpa.milkbox.net/packages/") t)
-  (setq package-user-dir emacsd-elpa-dir)
-  (package-initialize))
-
 (require 'guru-mode)
 (add-hook 'prog-mode-hook 'guru-mode)
 (guru-mode +1)
@@ -31,8 +24,10 @@
 (delete-selection-mode t)
 (global-auto-revert-mode t)
 (fset 'yes-or-no-p 'y-or-n-p)
-(setq-default indent-tabs-mode nil
-              tab-width 4)
+
+(setq-default indent-tabs-mode nil)   ;; don't use tabs to indent
+(setq-default tab-width 8)            ;; but maintain correct appearance
+
 (setq confirm-kill-emacs 'yes-or-no-p
       require-final-newline t
       scroll-conservatively 10000
