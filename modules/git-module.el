@@ -7,7 +7,6 @@
 ;;; Code:
 
 (require 'git-commit)
-
 (require 'magit)
 (require 'magit-gitflow)
 (add-hook 'magit-flow-hook 'turn-on-magit-gitflow)

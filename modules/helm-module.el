@@ -8,6 +8,7 @@
 
 (require 'helm)
 (require 'helm-ag)
+(require 'helm-command)
 (require 'helm-misc)
 (require 'helm-files)
 (require 'helm-ls-git)
@@ -19,7 +20,6 @@
 (require 'helm-descbinds)
 (require 'helm-eshell)
 
-(require 'helm-config)
 (require 'helm-projectile)
 
 (when (executable-find "curl")

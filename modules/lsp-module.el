@@ -35,6 +35,7 @@
 
 (setq lsp-clients-typescript-max-ts-server-memory 1024)
 (setq lsp-enable-file-watchers nil)
+(setq lsp-warn-no-matched-clients nil)
 (setq lsp-log-io nil) ;; Don't log everything = speed
 
 (setq lsp-ui-doc-enable t)

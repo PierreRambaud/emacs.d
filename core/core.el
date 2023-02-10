@@ -63,11 +63,11 @@
 (setq ispell-program-name "ispell")
 
 ;; Print config
-(setq ps-font-size 8
-      ps-header-font-size 9
-      ps-header-title-font-size 10
+(setq ps-font-size 6
+      ps-header-font-size 6
+      ps-header-title-font-size 8
       ps-line-number t
-      ps-line-number-font-size 8
+      ps-line-number-font-size 6
       ps-line-number-step 1
       ps-print-color-p (quote black-white))
 

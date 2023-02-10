@@ -1,4 +1,5 @@
 (source gnu)
+(source nongnu)
 (source melpa)
 (source melpa-stable)
 
